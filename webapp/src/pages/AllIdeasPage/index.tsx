@@ -1,12 +1,25 @@
 import { trpc } from "../../lib/trpc";
 
 export const AllIdeasPage = () => {
-   const result = trpc.getIdeas.useQuery();
-   console.log(result);
-   return <></>;
-   // return (
-   //    <div className="min-h-screen flex items-center justify-center bg-slate-900">
-   //       <h1 className="text-3xl font-bold text-white">Tailwind v3 with pnpm 🚀</h1>
-   //    </div>
-   // );
+   const { data, error, isLoading, isError } = trpc.getIdeas.useQuery();
+
+   if (isLoading) {
+      return <span>Loading....</span>;
+   }
+
+   if (isError) {
+      return <span>Error: {error.message}</span>;
+   }
+
+   return (
+      <>
+         <h1 className="font-mono">All Ideas</h1>
+         {data?.ideas.map((idea) => (
+            <div className="font-mono flex flex-col py-2" key={idea.nick}>
+               <h2>{idea.name}</h2>
+               <p>{idea.description}</p>
+            </div>
+         ))}
+      </>
+   );
 };

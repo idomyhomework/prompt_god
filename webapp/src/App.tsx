@@ -1,11 +1,11 @@
 import "./App.css";
+import { TrpcProvider } from "./lib/trpc";
+import { AllIdeasPage } from "./pages/AllIdeasPage";
 
-function App() {
+export const App = () => {
    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-900">
-         <h1 className="text-3xl font-bold text-white">Tailwind v3 with pnpm 🚀</h1>
-      </div>
+      <TrpcProvider>
+         <AllIdeasPage />
+      </TrpcProvider>
    );
-}
-
-export default App;
+};

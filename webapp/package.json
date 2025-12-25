@@ -1,5 +1,5 @@
 {
-   "name": "webapp",
+   "name": "@prompt_god/webapp",
    "private": true,
    "version": "0.0.0",
    "type": "module",
@@ -11,8 +11,12 @@
       "prettify": "prettier --log-level warn --cache --write \"src/**/*.{ts,tsx,js,json,yml,scss}\" \"*.{ts,tsx,js,json,yml,scss}\" \"!**/{node_modules,dist}/**/*\""
    },
    "dependencies": {
+      "@tanstack/react-query": "^5.90.12",
+      "@trpc/client": "^11.8.1",
+      "@trpc/react-query": "^11.8.1",
       "react": "^19.2.0",
-      "react-dom": "^19.2.0"
+      "react-dom": "^19.2.0",
+      "@prompt_god/backend": "workspace:*"
    },
    "devDependencies": {
       "@eslint/js": "^9.39.1",

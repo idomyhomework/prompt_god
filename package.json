@@ -5,6 +5,7 @@
    "scripts": {
       "b": "pnpm --filter @prompt_god/backend",
       "f": "pnpm --filter @prompt_god/webapp",
-      "dev": "pnpm r --parallel dev"
+      "dev": "pnpm r --parallel dev",
+      "types": "pnpm --filter @prompt_god/backend types && pnpm --filter @prompt_god/webapp types"
    }
 }

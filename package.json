@@ -1,5 +1,10 @@
 {
    "name": "prompt_god",
    "private": true,
-   "version": "0.0.0"
+   "version": "0.0.0",
+   "scripts": {
+      "b": "pnpm --filter @prompt_god/backend",
+      "f": "pnpm --filter @prompt_god/webapp",
+      "dev": "pnpm r --parallel dev"
+   }
 }

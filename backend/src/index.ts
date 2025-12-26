@@ -11,7 +11,7 @@ expressApp.get("/ping", (req, res) => {
 });
 
 expressApp.use(
-   "/trpc",
+   "/sparks",
    trpcExpress.createExpressMiddleware({
       router: trpcRouter,
    })

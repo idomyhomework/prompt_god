@@ -1,3 +1,7 @@
 {
-  "eslint.workingDirectories": ["backend", "webapp", "shared"]
+  "eslint.workingDirectories": ["backend", "webapp", "shared"],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
 }

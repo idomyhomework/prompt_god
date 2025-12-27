@@ -18,7 +18,6 @@ expressApp.use(
 );
 
 expressApp.listen(3000, () => {
-   console.log("Listening at localhost:3000");
 });
 
 export type { TrpcRouter };

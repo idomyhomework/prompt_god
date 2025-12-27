@@ -5,7 +5,14 @@
    "scripts": {
       "b": "pnpm --filter @prompt_god/backend",
       "f": "pnpm --filter @prompt_god/webapp",
-      "dev": "pnpm r --parallel dev",
+      "dev": "pnpm --parallel dev",
+      "lint": "pnpm --filter @prompt_god/backend lint && pnpm --filter @prompt_god/webapp lint",
       "types": "pnpm --filter @prompt_god/backend types && pnpm --filter @prompt_god/webapp types"
+   },
+   "devDependencies": {
+      "eslint": "^9.39.2",
+      "eslint-config-prettier": "^10.1.8",
+      "eslint-config-react-app": "^7.0.1",
+      "eslint-config-standard-with-typescript": "^43.0.1"
    }
 }

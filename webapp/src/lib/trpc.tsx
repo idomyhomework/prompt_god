@@ -1,7 +1,7 @@
 import type { TrpcRouter } from "@prompt_god/backend/src/trpc";
 import { createTRPCReact } from "@trpc/react-query";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { httpBatchLink, loggerLink, type TRPCLink } from "@trpc/client";
+import { httpBatchLink } from "@trpc/client";
 
 // import { observable } from "@trpc/server/observable";
 // import Cookies from 'js-cookie'

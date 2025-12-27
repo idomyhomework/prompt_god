@@ -2,20 +2,27 @@
    "name": "prompt_god",
    "private": true,
    "version": "0.0.0",
+   "type": "module",
    "scripts": {
       "b": "pnpm --filter @prompt_god/backend",
       "f": "pnpm --filter @prompt_god/webapp",
       "dev": "pnpm --parallel dev",
+      "prepare": "husky install",
       "lint": "pnpm --filter @prompt_god/backend lint && pnpm --filter @prompt_god/webapp lint",
       "types": "pnpm --filter @prompt_god/backend types && pnpm --filter @prompt_god/webapp types"
    },
    "devDependencies": {
+      "@eslint/js": "^9.39.2",
       "eslint": "^9.39.2",
       "eslint-config-prettier": "^10.1.8",
       "eslint-config-react-app": "^7.0.1",
-      "eslint-config-standard-with-typescript": "^43.0.1",
+      "eslint-plugin-react": "^7.37.5",
+      "eslint-plugin-react-hooks": "^7.0.1",
+      "globals": "^16.5.0",
       "husky": "^8.0.0",
       "lint-staged": "^16.2.7",
-      "prettier": "3.0.1"
+      "prettier": "3.0.1",
+      "typescript": "^5.9.3",
+      "typescript-eslint": "^8.50.1"
    }
 }

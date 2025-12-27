@@ -1,0 +1,13 @@
+"backend/src/**/*.{ts,tsx,js}":
+   - prettier --log-level warn --cache --write
+   - eslint --fix
+
+"webapp/src/**/*.{ts,tsx,js}":
+   - prettier --log-level warn --cache --write
+   - eslint --fix
+
+"backend/src/**/*.{json,css,md}":
+   - prettier --log-level warn --cache --write
+
+"webapp/src/**/*.{json,css,md}":
+   - prettier --log-level warn --cache --write

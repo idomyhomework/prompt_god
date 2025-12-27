@@ -9,6 +9,7 @@
       "preview": "vite preview",
       "lint" : "eslint .",
       "types": "tsc --noEmit --project ./tsconfig.json && tsc --noEmit --project ./tsconfig.node.json",
+      "prepare": "husky install",
       "prettify": "prettier --log-level warn --cache --write \"src/**/*.{ts,tsx,js,json,yml,scss}\" \"*.{ts,tsx,js,json,yml,scss}\" \"!**/{node_modules,dist}/**/*\""
    },
    "dependencies": {
